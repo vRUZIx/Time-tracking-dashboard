@@ -1,0 +1,97 @@
+body {
+    background-color: $navy-950;
+    position: relative;
+    padding: 50px;
+    
+    @include mobile {
+        padding: 20px;
+    }
+
+    .gridContainer {
+        height: 70vh;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        width: 90%;
+        margin: 0 auto;
+        
+        @include mobile {
+            height: auto; // Mobil üçün avtomatik hündürlük
+            width: 100%;
+            display: flex; // Flexbox ilə alt-alta düzülür
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .firstItem {
+            border-radius: 20px;
+            background-color: $navy-900;
+            border: 1px solid #000;
+            grid-row: 1 / span 2;
+            display: block;
+
+            @include mobile {
+                grid-row: auto; // İlk element avtomatik birinci sətirdə
+            }
+        }
+
+        .defaultItem {
+            position: relative;
+            border: 1px solid #000;
+            border-radius: 20px;
+
+            @include mobile {
+                grid-row: auto; // Bütün defaultItem-lər alt-alta düzülür
+                min-height: 180px; // Səliqəli görünüş üçün minimum hündürlük
+            }
+
+            .icon {
+                position: absolute;
+                right: 20px;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: absolute;
+                bottom: 0;
+                height: 80%;
+                width: 100%;
+                background-color: $navy-900;
+                padding: 20px;
+                border-radius: 15px;
+                
+                @include mobile {
+                    height: auto;
+                    min-height: 120px;
+                }
+            
+                .miniFlex {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+            
+                    span {
+                        color: #fff;
+                    }
+                }
+                
+                h1 {
+                    color: #fff;
+                    font-weight: 300;
+                    font-size: 48px;
+            
+                    @include mobile {
+                        font-size: 28px;
+                    }
+                }
+            
+                span {
+                    color: $navy-200;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// ==========================================
+// 🟣 FRONT-END STYLE GUIDE - SCSS VARIABLES
+// ==========================================
+
+// --------------------
+// 🎨 Colors
+// --------------------
+
+// Primary
+$purple-600: hsl(246, 80%, 60%);
+
+$orange-300: hsl(15, 100%, 70%);     // Work
+$blue-300: hsl(195, 74%, 62%);       // Play
+$pink-400: hsl(348, 100%, 68%);      // Study
+$green-400: hsl(145, 58%, 55%);      // Exercise
+$purple-700: hsl(264, 64%, 52%);     // Social
+$yellow-300: hsl(43, 84%, 65%);      // Self Care
+
+// Neutral
+$navy-950: hsl(226, 43%, 10%);
+$navy-900: hsl(235, 46%, 20%);
+$purple-500: hsl(235, 45%, 61%);
+$navy-200: hsl(236, 100%, 87%);
+
+// --------------------
+// 🧱 Layout
+// --------------------
+$mobile-width: 375px;
+$desktop-width: 1440px;
+
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+$body-font-size: 18px; // Card titles
+
+// --------------------
+// ✅ Accessibility Hint
+// --------------------
+// 🔍 Always test responsiveness from 320px to large screens
+// 🎯 Make sure to meet WCAG requirements
+font-face{
+    font-family: 'Rubik', sans-serif;
+    src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: $font-weight-regular;
+    font-style: normal;
+}

@@ -1,0 +1,226 @@
+font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  position: relative;
+  padding: 50px;
+}
+@media (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+}
+body .gridContainer {
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 375px) {
+  body .gridContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+body .gridContainer .firstItem {
+  border-radius: 20px;
+  background-color: hsl(235, 46%, 20%);
+  border: 1px solid #000;
+  grid-row: 1/span 2;
+  display: block;
+}
+@media (max-width: 375px) {
+  body .gridContainer .firstItem {
+    grid-row: auto;
+  }
+}
+body .gridContainer .defaultItem {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+@media (max-width: 375px) {
+  body .gridContainer .defaultItem {
+    grid-row: auto;
+    min-height: 180px;
+  }
+}
+body .gridContainer .defaultItem .icon {
+  position: absolute;
+  right: 20px;
+}
+body .gridContainer .defaultItem .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  padding: 20px;
+  border-radius: 15px;
+}
+@media (max-width: 375px) {
+  body .gridContainer .defaultItem .box {
+    height: auto;
+    min-height: 120px;
+  }
+}
+body .gridContainer .defaultItem .box .miniFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+body .gridContainer .defaultItem .box .miniFlex span {
+  color: #fff;
+}
+body .gridContainer .defaultItem .box h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 48px;
+}
+@media (max-width: 375px) {
+  body .gridContainer .defaultItem .box h1 {
+    font-size: 28px;
+  }
+}
+body .gridContainer .defaultItem .box span {
+  color: hsl(236, 100%, 87%);
+}
+
+.fIT {
+  height: 70%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+}
+@media (max-width: 375px) {
+  .fIT {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+}
+.fIT .fI {
+  padding: 40px;
+}
+@media (max-width: 375px) {
+  .fIT .fI {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.fIT .fI img {
+  width: 20%;
+  height: 20%;
+  display: block;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 40px;
+}
+@media (max-width: 375px) {
+  .fIT .fI img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+  }
+}
+.fIT .fI h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 56px;
+}
+@media (max-width: 375px) {
+  .fIT .fI h1 {
+    font-size: 24px;
+  }
+}
+.fIT .fI h2 {
+  color: hsl(236, 100%, 87%);
+}
+@media (max-width: 375px) {
+  .fIT .fI h2 {
+    display: none;
+  }
+}
+
+.Fut {
+  height: 30%;
+  border-radius: 20px;
+}
+@media (max-width: 375px) {
+  .Fut {
+    height: auto;
+  }
+}
+.Fut .fU {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .Fut .fU {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  }
+}
+.Fut .fU h4 {
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+  cursor: pointer;
+}
+.Fut .fU h4:hover {
+  color: #fff;
+}
+.Fut .fU .selected {
+  color: #fff;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.scare {
+  background-color: hsl(43, 84%, 65%);
+}/*# sourceMappingURL=main.css.map */
